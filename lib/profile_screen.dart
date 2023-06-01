@@ -13,6 +13,32 @@ class ProfileScreen extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 80,
+              backgroundImage: AssetImage('images/pic2.jpg'),
+              // child: Icon(
+              //   Icons.person,
+              //   size: 80,
+              //   color: Colors.white,
+              // ),
+            ),
+            SizedBox(height: 16.0),
+            Text(
+              'Monica Elisabet',
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 8.0),
+            Text(
+              '123200082',
+              style: TextStyle(
+                fontSize: 18.0,
+                color: Colors.grey,
+              ),
+            ),
+            SizedBox(height: 24.0),
+            CircleAvatar(
+              radius: 80,
               backgroundImage: AssetImage('images/pic.jpg'),
               // child: Icon(
               //   Icons.person,
@@ -36,22 +62,7 @@ class ProfileScreen extends StatelessWidget {
                 color: Colors.grey,
               ),
             ),
-            SizedBox(height: 24.0),
-            Text(
-              'Kesan : Matkul TPM Berjalan dengan baik dan teratur',
-              style: TextStyle(
-                fontSize: 16.0,
-                color: Colors.grey,
-              ),
-            ),
-            SizedBox(height: 8.0),
-            Text(
-              'Pesan : Semoga kedepannya lebih baik lagi',
-              style: TextStyle(
-                fontSize: 18.0,
-                color: Colors.grey,
-              ),
-            ),
+            SizedBox(height: 24.0)
           ],
         ),
       ),
